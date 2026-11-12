@@ -1,6 +1,9 @@
 F<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#650a1b"><title>Cardápio de Natal | La Gureski</title><style>
 :root{--wine:#650a1b;--wine2:#3e0815;--gold:#cbab63;--cream:#fff9f0;--ink:#36252a;--muted:#745f61}*{box-sizing:border-box}body{margin:0;background:var(--cream);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink)}header{background:linear-gradient(120deg,var(--wine2),var(--wine));color:white;text-align:center;padding:22px 16px 28px;border-bottom:4px solid var(--gold)}.brand{display:flex;align-items:center;justify-content:center;gap:18px}.brand img{width:100px;height:100px;object-fit:contain;border:2px solid var(--gold);border-radius:50%;background:var(--wine2)}.eyebrow{color:var(--gold);letter-spacing:.19em;font-size:12px;text-transform:uppercase}h1{font-family:Georgia,serif;color:#f5d88b;font-size:clamp(30px,5vw,47px);margin:0}header p{margin:12px auto 0;max-width:720px;line-height:1.5}main{max-width:1170px;margin:auto;padding:22px 16px 110px}.info{background:white;border:1px solid #e7cfa5;padding:17px 20px;border-radius:14px;line-height:1.7;margin-bottom:18px}.search{width:100%;padding:15px;border:1px solid #d9c5b1;border-radius:12px;font-size:16px;background:white}.chips{display:flex;gap:8px;overflow:auto;padding:16px 0;scrollbar-width:thin}.chip{white-space:nowrap;background:white;color:var(--wine);border:1px solid var(--gold);border-radius:40px;padding:10px 15px;cursor:pointer}.chip.active{background:var(--wine);color:white;border-color:var(--wine)}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:17px}.product{background:white;border:1px solid #ead6b9;border-radius:16px;overflow:hidden;display:flex;flex-direction:column}  .product img {   width: 100%;   height: auto;   aspect-ratio: auto;   object-fit: contain;   display: block; } {   width: 100%;   height: auto;   aspect-ratio: auto;   object-fit: contain;   object-position: center;   display: block; }{   width:100%;   height:270px;   object-fit:contain;   object-position:center center;   background:#f3e6d4;   display:block; }{width:100%;aspect-ratio:1/1;object-fit:contain;background:#f3e6d4}.body{padding:14px;display:flex;flex:1;flex-direction:column}.body h3{margin:0 0 7px;font-size:16px;color:var(--wine)}.body p{font-size:13px;color:var(--muted);line-height:1.5;flex:1;margin:0 0 12px}.price{font-size:19px;font-weight:800;color:var(--wine);margin-bottom:12px}.add,.primary{background:var(--wine);color:white;border:0;border-radius:9px;padding:12px;cursor:pointer;font-weight:700}.bar{position:fixed;bottom:0;left:0;right:0;background:#fff;border-top:2px solid var(--gold);padding:10px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px;z-index:10}.bar button{background:var(--wine);color:white;border:0;border-radius:9px;padding:13px 20px;cursor:pointer;font-weight:700}dialog{width:min(620px,96vw);max-height:90vh;border:0;border-radius:16px;padding:0;box-shadow:0 15px 55px #0005}dialog::backdrop{background:#21000c99}.dialog-head{display:flex;justify-content:space-between;align-items:center;background:var(--wine);color:white;padding:15px 20px}.dialog-head h2{font-family:Georgia,serif;margin:0}.close{background:transparent;color:white;border:0;font-size:27px;cursor:pointer}.dialog-body{padding:20px;max-height:75vh;overflow:auto}.cartline{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid #eee}.cartline small{display:block;color:var(--muted)}.qty{display:flex;align-items:center;gap:9px}.qty button{border:1px solid #d6bd9a;border-radius:6px;background:white;padding:4px 9px;cursor:pointer}.total{font-size:20px;font-weight:800;text-align:right;margin:14px 0}.field{display:grid;gap:5px;margin:13px 0}.field input,.field select,.field textarea{width:100%;border:1px solid #d3c0b2;border-radius:9px;padding:11px;font:inherit}.choices{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0}.choices label{display:flex;align-items:center;gap:5px}.primary{width:100%;font-size:16px;margin-top:12px}.hint{font-size:12px;color:var(--muted);line-height:1.5}.empty{text-align:center;color:var(--muted);padding:40px} @media(max-width:600px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.body{padding:10px}.body h3{font-size:14px}.brand img{width:78px;height:78px} .product img {   width: 100%;   height: auto;   aspect-ratio: auto;   object-fit: contain;   object-position: center;   display: block; }{aspect-ratio:1}.bar{font-size:13px}.bar button{padding:12px}}
-</style></head><body><header><div class="brand"><img src="imagens/logo.jpg" alt="Logo La Gureski"><div><div class="eyebrow">Delícias Artesanais</div><h1>La Gureski</h1><div style="color:#e5c375">✦ Natal 2026 ✦</div></div></div><p>Seu Natal merece delícias feitas com carinho. Escolha seus favoritos, monte seu carrinho e envie seu pedido pelo WhatsApp.</p></header><main><section class="info"><strong>🎄 Encomendas até 05/12/2026.</strong> Prazo de entrega: de 5 a 10 dias após o pedido. Reserva mediante pagamento de <strong>50% do valor</strong>, com saldo na entrega. Em caso de desistência, conforme o catálogo, não há reembolso. Disponibilidade e data serão confirmadas pela La Gureski.</section><input class="search" id="search" type="search" placeholder="Buscar panetones, cookies, presentes..." aria-label="Buscar produtos"><nav class="chips" id="chips" aria-label="Categorias"></nav><section class="grid" id="grid"></section></main><div class="bar"><div><strong id="barTotal">R$ 0,00</strong><br><span id="barQty">0 itens</span></div><button id="openCart">🛒 Ver carrinho</button></div><dialog id="cartDialog"><div class="dialog-head"><h2>Seu pedido de Natal</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div><div class="dialog-body"><div id="cartItems"></div><div class="total">Subtotal: <span id="subtotal">R$ 0,00</span></div><form id="orderForm"><label class="field">Nome completo<input name="name" required autocomplete="name"></label><label class="field">Telefone para contato<input name="phone" type="tel" autocomplete="tel" required></label><strong>Recebimento</strong><div class="choices"><label><input type="radio" name="delivery" value="Retirada" checked> Retirada</label><label><input type="radio" name="delivery" value="Entrega"> Entrega</label></div><label class="field" id="addressWrap" hidden>Endereço de entrega<textarea name="address" rows="2"></textarea></label><p class="hint" id="deliveryNote"></p><label class="field">Forma de pagamento<select name="payment" required><option value="Pix">Pix</option><option value="Dinheiro">Dinheiro</option><option value="Débito">Débito</option><option value="Crédito">Crédito</option></select></label><label class="field">Observações<textarea name="notes" rows="2" placeholder="Ex.: data desejada, detalhes do pedido..."></textarea></label><p class="hint">O pedido será enviado ao WhatsApp para confirmação. O site não realiza cobrança automática.</p><button class="primary" id="checkout" type="submit">Enviar pedido pelo WhatsApp</button></form></div></dialog><script>
+</style></head><body><header><div class="brand"><img src="imagens/logo.jpg" alt="Logo La Gureski"><div><div class="eyebrow">Delícias Artesanais</div><h1>La Gureski</h1><div style="color:#e5c375">✦ Natal 2026 ✦</div></div></div><p>Seu Natal merece delícias feitas com carinho. Escolha seus favoritos, monte seu carrinho e envie seu pedido pelo WhatsApp.</p></header><main><section class="info"><strong>🎄 Encomendas até 05/12/2026.</strong> Prazo de entrega: de 5 a 10 dias após o pedido. Reserva mediante pagamento de <strong>50% do valor</strong>, com saldo na entrega. Em caso de desistência, conforme o catálogo, não há reembolso. Disponibilidade e data serão confirmadas pela La Gureski.</section><input class="search" id="search" type="search" placeholder="Buscar panetones, cookies, presentes..." aria-label="Buscar produtos"><nav class="chips" id="chips" aria-label="Categorias"></nav><section class="grid" id="grid"></section></main><div class="bar"><div><strong id="barTotal">R$ 0,00</strong><br><span id="barQty">0 itens</span></div><button id="openCart">🛒 Ver carrinho</button></div><dialog id="cartDialog"><div class="dialog-head"><h2>Seu pedido de Natal</h2><button class="close" id="closeCart" aria-label="Fechar">×</button></div><div class="dialog-body"><div id="cartItems"></div><div class="total">Subtotal: <span id="subtotal">R$ 0,00</span></div><form id="orderForm"><label class="field">Nome completo<input name="name" required autocomplete="name"></label><label class="field">Telefone para contato<input name="phone" type="tel" autocomplete="tel" required></label><strong>Recebimento</strong><div class="choices"><label><input type="radio" name="delivery" value="Retirada" checked> Retirada</label><label><input type="radio" name="delivery" value="Entrega"> Entrega</label></div><label class="field" id="addressWrap" hidden>Endereço de entrega<textarea name="address" rows="2"></textarea></label><p class="hint" id="deliveryNote"></p><label class="field">Forma de pagamento<select name="payment" required><option value="Pix">Pix</option><option value="Dinheiro">Dinheiro</option><option value="Débito">Débito</option><option value="Crédito">Crédito</option></select></label><label class="field">Observações<textarea name="notes" rows="2" placeholder="Ex.: data desejada, detalhes do pedido..."></textarea></label><p class="hint">O pedido será enviado ao WhatsApp para confirmação. O site não realiza cobrança automática.</p>
+<button class="primary" id="checkout" type="submit">Enviar pedido pelo WhatsApp</button>
+<button class="primary" id="copyOrder" type="button" onclick="copyOrderText()">📋 Copiar meu pedido</button>
+</form></div></dialog><script>
 const products=[{"id": 1, "cat": "Panetones tradicionais", "name": "Panetone gotas de chocolate com cobertura", "desc": "550 g · Gotas de chocolate e cobertura de chocolate", "price": 55, "img": "imagens/panetone-gotas-cobertura.jpg", "options": [], "bulk": false}, {"id": 2, "cat": "Panetones tradicionais", "name": "Panetone frutas cristalizadas com cobertura", "desc": "550 g · Fondant e chocolate branco", "price": 50, "img": "imagens/panetone-frutas-cobertura.jpg", "options": [], "bulk": false}, {"id": 3, "cat": "Panetones tradicionais", "name": "Panetone gotas de chocolate — 500 g", "desc": "Massa macia com gotas de chocolate", "price": 50, "img": "imagens/panetone-gotas.jpg", "options": [], "bulk": false}, {"id": 4, "cat": "Panetones tradicionais", "name": "Panetone gotas de chocolate — 250 g", "desc": "Massa macia com gotas de chocolate", "price": 25, "img": "imagens/panetone-gotas.jpg", "options": [], "bulk": false}, {"id": 5, "cat": "Panetones tradicionais", "name": "Panetone frutas cristalizadas — 500 g", "desc": "Panetone tradicional com frutas cristalizadas", "price": 45, "img": "imagens/panetone-frutas.jpg", "options": [], "bulk": false}, {"id": 6, "cat": "Panetones tradicionais", "name": "Panetone frutas cristalizadas — 250 g", "desc": "Panetone tradicional com frutas cristalizadas", "price": 25, "img": "imagens/panetone-frutas.jpg", "options": [], "bulk": false}, {"id": 7, "cat": "Panetones gourmet", "name": "Panetone La Dolce", "desc": "1 kg · Doce de leite e marshmallow maçaricado", "price": 135, "img": "imagens/panetone-la-dolce.jpg", "options": [], "bulk": false}, {"id": 8, "cat": "Panetones gourmet", "name": "Panetone La Fruttina", "desc": "1 kg · Ganache branca e frutas vermelhas", "price": 135, "img": "imagens/panetone-la-fruttina.jpg", "options": [], "bulk": false}, {"id": 9, "cat": "Panetones gourmet", "name": "Panetone La Croc", "desc": "1 kg · Creme de chocolate e avelã, cobertura especial e crocância", "price": 135, "img": "imagens/panetone-la-croc.jpg", "options": [], "bulk": false}, {"id": 10, "cat": "Panetones gourmet", "name": "Panetone La Cerise", "desc": "1 kg · Ganache branca e cerejas", "price": 135, "img": "imagens/panetone-la-cerise.jpg", "options": [], "bulk": false}, {"id": 11, "cat": "Panetones gourmet", "name": "Panetone La Avelã", "desc": "1 kg · Creme de avelã", "price": 135, "img": "imagens/panetone-la-avela.jpg", "options": [], "bulk": false}, {"id": 12, "cat": "Pães de mel", "name": "Dadinhos de pão de mel — 9 unidades", "desc": "Em embalagem com 9 unidades", "price": 15, "img": "imagens/dadinhos-pao-de-mel.jpg", "options": [], "bulk": false}, {"id": 13, "cat": "Pães de mel", "name": "Lata natalina com dadinhos — 8 unidades", "desc": "Lata presenteável", "price": 25, "img": "imagens/lata-natalina.jpg", "options": ["Branco", "Verde", "Vermelho"], "bulk": false}, {"id": 14, "cat": "Pães de mel", "name": "Correio natalino com dadinhos — 8 unidades", "desc": "Em embalagem especial de presente", "price": 20, "img": "imagens/correio-natalino.jpg", "options": [], "bulk": false}, {"id": 15, "cat": "Bolachas natalinas", "name": "Balde de bolachas natalinas — 400 g", "desc": "Bolachas artesanais decoradas", "price": 45, "img": "imagens/bolachas-balde.jpg", "options": [], "bulk": false}, {"id": 16, "cat": "Bolachas natalinas", "name": "Balde de bolachas natalinas — 800 g", "desc": "Bolachas artesanais decoradas", "price": 75, "img": "imagens/bolachas-balde.jpg", "options": [], "bulk": false}, {"id": 17, "cat": "Bolachas natalinas", "name": "Bolachas natalinas — pacote de 200 g", "desc": "Pacote para presentear", "price": 30, "img": "imagens/bolachas-saco-200g.jpg", "options": [], "bulk": false}, {"id": 18, "cat": "Bolachas natalinas", "name": "Bolachas natalinas — 1 unidade", "desc": "Embalagem com 1 unidade", "price": 3.5, "img": "imagens/bolachas-pacotinhos.jpg", "options": [], "bulk": false}, {"id": 19, "cat": "Bolachas natalinas", "name": "Bolachas natalinas — 2 unidades", "desc": "Embalagem com 2 unidades", "price": 6.5, "img": "imagens/bolachas-pacotinhos.jpg", "options": [], "bulk": false}, {"id": 20, "cat": "Bolachas natalinas", "name": "Bolachas natalinas — 3 unidades", "desc": "Embalagem com 3 unidades", "price": 9.5, "img": "imagens/bolachas-pacotinhos.jpg", "options": [], "bulk": false}, {"id": 21, "cat": "Presentes", "name": "Caneca natalina com bolachas de laranja", "desc": "R$ 40/un. · Acima de 10 unidades, R$ 35/un. · Escolha uma das 4 estampas", "price": 40, "img": "imagens/caneca-natalina.jpg", "options": ["1 — Magia Curitibana", "2 — Natal da Capivara", "3 — Noite Iluminada", "4 — Doce Natal"], "bulk": true}, {"id": 22, "cat": "Cookies", "name": "Cookie La Originale — 90 g", "desc": "Tradicional com gotas de chocolate", "price": 15, "img": "imagens/cookies-natalinos.jpg", "options": [], "bulk": false}, {"id": 23, "cat": "Cookies", "name": "Cookie La Avelã — 160 g", "desc": "Recheio de chocolate e avelã", "price": 20, "img": "imagens/cookies-natalinos.jpg", "options": [], "bulk": false}, {"id": 24, "cat": "Cookies", "name": "Cookie La Cocco — 160 g", "desc": "Sabor delicado de coco", "price": 20, "img": "imagens/cookies-natalinos.jpg", "options": [], "bulk": false}, {"id": 25, "cat": "Cookies", "name": "Cookie La Croc — 160 g", "desc": "Creme de avelã com toque crocante", "price": 20, "img": "imagens/cookies-natalinos.jpg", "options": [], "bulk": false}, {"id": 26, "cat": "Cookies", "name": "Cookie La Velvet — 160 g", "desc": "Red Velvet macio e delicado", "price": 20, "img": "imagens/cookies-natalinos.jpg", "options": [], "bulk": false}];
 const brl=n=>Number(n).toLocaleString('pt-BR',{style:'currency',currency:'BRL'});
 const cart=new Map();let active='Todos';
@@ -16,6 +19,93 @@ function updateBar(){$('barTotal').textContent=brl(total());$('barQty').textCont
 function showCart(){renderCart();$('cartDialog').showModal()}
 function renderCart(){$('cartItems').innerHTML='';for(const [key,x] of cart){const row=document.createElement('div');row.className='cartline';const desc=document.createElement('div');const strong=document.createElement('strong');strong.textContent=x.p.name;desc.appendChild(strong);if(x.opt){const s=document.createElement('small');s.textContent=x.opt;desc.appendChild(s)}const s=document.createElement('small');s.textContent=brl(unitPrice(x))+' por unidade';desc.appendChild(s);const controls=document.createElement('div');controls.className='qty';const minus=document.createElement('button');minus.textContent='−';minus.onclick=()=>{x.qty--;if(!x.qty)cart.delete(key);renderCart();updateBar()};const count=document.createElement('span');count.textContent=x.qty;const plus=document.createElement('button');plus.textContent='+';plus.onclick=()=>{x.qty++;renderCart();updateBar()};controls.append(minus,count,plus);row.append(desc,controls);$('cartItems').appendChild(row)}if(!cart.size)$('cartItems').innerHTML='<p>Seu carrinho está vazio.</p>';$('subtotal').textContent=brl(total());$('checkout').disabled=!cart.size}
 function updateDelivery(){const del=document.querySelector('input[name="delivery"]:checked').value;$('addressWrap').hidden=del==='Retirada';$('deliveryNote').textContent=del==='Retirada'?'Retirada: endereço e horário serão combinados no WhatsApp.':'Boa Vista e Santa Cândida (até 3 km): taxa informada no catálogo de R$ 10,00. Demais locais: frete a confirmar.'}
-function sendOrder(ev){ev.preventDefault();if(!cart.size)return alert('Adicione produtos ao carrinho.');const form=new FormData(ev.currentTarget);const name=(form.get('name')||'').trim();if(!name)return alert('Informe seu nome.');const delivery=form.get('delivery');const address=(form.get('address')||'').trim();if(delivery==='Entrega'&&!address)return alert('Informe o endereço de entrega.');const lines=['*PEDIDO - LA GURESKI | NATAL 2026*','','*Cliente:* '+name,'*Telefone:* '+(form.get('phone')||''),'','*Produtos:*'];for(const x of cart.values())lines.push('• '+x.qty+'x '+x.p.name+(x.opt?' ('+x.opt+')':'')+' — '+brl(x.qty*unitPrice(x)));lines.push('','*Subtotal:* '+brl(total()),'*Recebimento:* '+delivery);if(delivery==='Entrega')lines.push('*Endereço:* '+address,'*Frete:* a confirmar');lines.push('*Pagamento:* '+form.get('payment'),'*Sinal de 50%:* '+brl(total()/2)+' (sem frete)','*Observações:* '+(form.get('notes')||'Nenhuma'),'','*Pedido sujeito à confirmação de disponibilidade, prazo e valor do frete pela La Gureski.*');window.location.href='https://wa.me/5541999635819?text='+encodeURIComponent(lines.join('\n'))}
+
+function prepararPedido() {
+  const formulario = document.getElementById('orderForm');
+
+  if (!formulario.reportValidity()) return null;
+
+  if (!cart.size) {
+    alert('Adicione produtos ao carrinho.');
+    return null;
+  }
+
+  const form = new FormData(formulario);
+  const name = (form.get('name') || '').trim();
+
+  if (!name) {
+    alert('Informe seu nome.');
+    return null;
+  }
+
+  const delivery = form.get('delivery');
+  const address = (form.get('address') || '').trim();
+
+  if (delivery === 'Entrega' && !address) {
+    alert('Informe o endereço de entrega.');
+    return null;
+  }
+
+  const lines = [
+    '*PEDIDO - LA GURESKI | NATAL 2026*',
+    '',
+    '*Cliente:* ' + name,
+    '*Telefone:* ' + (form.get('phone') || ''),
+    '',
+    '*Produtos:*'
+  ];
+
+  for (const x of cart.values()) {
+    lines.push(
+      '• ' + x.qty + 'x ' + x.p.name +
+      (x.opt ? ' (' + x.opt + ')' : '') +
+      ' — ' + brl(x.qty * unitPrice(x))
+    );
+  }
+
+  lines.push(
+    '',
+    '*Subtotal:* ' + brl(total()),
+    '*Recebimento:* ' + delivery
+  );
+
+  if (delivery === 'Entrega') {
+    lines.push('*Endereço:* ' + address, '*Frete:* a confirmar');
+  }
+
+  lines.push(
+    '*Pagamento:* ' + form.get('payment'),
+    '*Sinal de 50%:* ' + brl(total() / 2) + ' (sem frete)',
+    '*Observações:* ' + (form.get('notes') || 'Nenhuma'),
+    '',
+    '*Pedido sujeito à confirmação de disponibilidade, prazo e valor do frete pela La Gureski.*'
+  );
+
+  return lines.join('\n');
+}
+
+function sendOrder(ev) {
+  ev.preventDefault();
+
+  const mensagem = prepararPedido();
+  if (mensagem === null) return;
+
+  window.location.href =
+    'https://wa.me/5541999635819?text=' +
+    encodeURIComponent(mensagem);
+}
+
+async function copyOrderText() {
+  const mensagem = prepararPedido();
+  if (mensagem === null) return;
+
+  try {
+    await navigator.clipboard.writeText(mensagem);
+    alert('Pedido copiado! Cole na conversa com a La Gureski pelo WhatsApp.');
+  } catch (erro) {
+    alert('Não foi possível copiar automaticamente. Tente novamente pelo navegador.');
+  }
+}
+
 $('search').addEventListener('input',renderProducts);$('openCart').onclick=showCart;$('closeCart').onclick=()=>$('cartDialog').close();$('orderForm').onsubmit=sendOrder;document.querySelectorAll('input[name="delivery"]').forEach(el=>el.onchange=updateDelivery);renderChips();renderProducts();updateBar();updateDelivery();
 </script></body></html>
